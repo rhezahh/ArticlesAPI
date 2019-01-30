@@ -15,7 +15,7 @@ use App\Article;
 */
 
 
-Route::group(['prefix'=> 'api', 'middleware' => 'cors'], function(){
+Route::group(['middleware' => 'cors'], function(){
     Route::get('articles', 'ArticleController@index');
     Route::get('articles/{article}', 'ArticleController@show');
     Route::post('articles', 'ArticleController@store');
