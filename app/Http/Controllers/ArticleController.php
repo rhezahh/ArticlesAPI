@@ -7,10 +7,6 @@ use App\Article;
 
 class ArticleController extends Controller
 {
-    public function __construct() {
-        header('Access-Control-Allow-Origin: *');
-    }
-
     public function index() {
         return Article::all();
     }
