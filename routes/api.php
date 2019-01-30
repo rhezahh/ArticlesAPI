@@ -14,6 +14,8 @@ use App\Article;
 |
 */
 
+
+Barryvdh\Cors\HandleCors::class;
 Route::get('articles', 'ArticleController@index');
 Route::get('articles/{article}', 'ArticleController@show');
 Route::post('articles', 'ArticleController@store');
